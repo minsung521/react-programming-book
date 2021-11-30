@@ -5,7 +5,7 @@ export default function TodoList() {
 	const onClick = () => {
 		import("./Todo.js").then(({ Todo }) => {
 			const position = todos.length + 1;
-			const newTodo = <Todo key={position} title={`할 일 ${position}`} />;
+			const newTodo = <Todo key={position} title={`할일 ${position}`} />;
 			setTodos([...todos, newTodo]);
 		});
 	};
